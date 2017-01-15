@@ -9,5 +9,6 @@ script:
   - clang --version
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake .. -Dtest=on
   - make
+  - ./runUnitTests
